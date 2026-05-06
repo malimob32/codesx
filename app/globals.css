@@ -8,8 +8,13 @@
 
 body {
   @apply bg-background text-white antialiased;
+  background-image: linear-gradient(to bottom right, #060b14, #0c1529);
 }
 
 .glass {
-  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  @apply bg-slate-900/45 backdrop-blur-xl border border-sky-300/10;
+}
+
+.blue-ring {
+  @apply ring-1 ring-sky-300/25;
 }

@@ -6,19 +6,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#09090B',
-        surface: '#111217',
+        background: '#060B14',
+        surface: '#0F172A',
         neon: {
-          purple: '#9F58FF',
-          red: '#FF385C',
-          blue: '#3B82F6'
+          purple: '#8B5CF6',
+          red: '#FB7185',
+          blue: '#38BDF8'
         }
       },
       boxShadow: {
-        neon: '0 0 50px rgba(159,88,255,0.35)'
+        neon: '0 0 45px rgba(56,189,248,0.28)'
       },
       backgroundImage: {
-        mesh: 'radial-gradient(circle at top, rgba(159,88,255,.28), transparent 40%), radial-gradient(circle at 80% 30%, rgba(255,56,92,.22), transparent 35%), radial-gradient(circle at 30% 80%, rgba(59,130,246,.2), transparent 35%)'
+        mesh: 'radial-gradient(circle at top, rgba(56,189,248,.28), transparent 45%), radial-gradient(circle at 80% 20%, rgba(14,165,233,.22), transparent 35%), radial-gradient(circle at 20% 80%, rgba(99,102,241,.2), transparent 40%)'
       }
     }
   },
