@@ -22,6 +22,22 @@ Premium tattoo eCommerce and artist marketplace built with Next.js, Tailwind, Pr
    npm run dev
    ```
 
+## Route Access (allow rules)
+
+The app now explicitly allows public access to:
+- `/`
+- `/shop`
+- `/booking`
+- `/artists/*`
+- `/api/health`
+
+Protected behavior:
+- unauthenticated users are redirected to `/` for protected pages
+- `/admin/*` requires `ADMIN` role
+- `/dashboard/*` requires a signed-in role (`ADMIN`, `ARTIST`, or `USER`)
+
+See `middleware.ts` for the access gate logic.
+
 ## Live Deployment (GitHub + Vercel)
 
 1. Create a GitHub repo and add it as remote:
@@ -37,15 +53,6 @@ Premium tattoo eCommerce and artist marketplace built with Next.js, Tailwind, Pr
    - `/shop`
    - `/artists/featured-artist`
    - `/api/health`
-
-## Current Scope
-
-- App Router + TypeScript + Tailwind baseline
-- Premium animated landing page (Framer Motion + GSAP)
-- Core route scaffolding: shop, artist profile, booking, cart, user dashboard, admin dashboard
-- Prisma schema scaffold for users, artists, products, bookings, reviews
-- Zustand cart store scaffold + API health route
-- Environment template for auth, Stripe, Cloudinary
 
 ## Troubleshooting: `npm install` blocked (403)
 
